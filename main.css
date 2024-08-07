@@ -16,7 +16,7 @@ p {
     background: url(raychi.jpg) no-repeat center center; /* Ensure image is centered */
     background-size: cover; /* Adjust image to cover the text container */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: rgb(300, 300, 255, 0.1); /* Use transparent to ensure text color is affected */
+    -webkit-text-fill-color: rgb(255, 255, 255, 0.1); /* Use transparent to ensure text color is affected */
     max-width: 90vw; /* Limit width to viewport */
     margin: 0 10px; /* Padding around text */
 }
