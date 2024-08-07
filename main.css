@@ -12,18 +12,20 @@ p {
     font-size: 9px;
     line-height: 9px;
     text-align: justify;
-    background: url(raychi.jpg) no-repeat center/cover;
-    background-attachment: fixed;
+    background: url(raychi.jpg) no-repeat center/contain; /* Changed to contain for better scaling */
+    background-attachment: scroll; /* Changed to scroll to avoid fixed background issues on mobile */
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
-    margin: 20px;
+    color: transparent;
+    max-width: 90vw; /* Ensure the text container doesn't overflow the viewport */
+    margin: 0 10px; /* Add some horizontal padding */
 }
 
 @media only screen and (max-width: 600px) {
     p {
-        font-size: 6px;
+        font-size: 6px; /* Adjust font size for smaller screens */
         line-height: 6px;
-        background-size: cover;
+        background-size: contain; /* Ensure the background image scales down */
         background-position: center;
     }
 }
