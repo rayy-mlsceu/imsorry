@@ -1,20 +1,20 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #000000; /* Sets the background color to black */
-    background-image: url('./raychi.jpg'); /* Adjust the path if necessary */
-    background-size: cover; /* Ensures the background image covers the entire viewport */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the background image */
-    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+body{
+	margin:0;
+	padding: 0;
+	background:#000;
 }
 
 p {
-    font-size: 10px;
-    line-height: 10px;
-    text-align: justify;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: rgba(225, 225, 255, 0); /* Makes the text color transparent to show the background */
-    color: transparent; /* Ensures text color is hidden */
+	font-size:10px;
+	line-height:10px;
+	text-align:justify;
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background: url(raychi.jpg) no-repeat center/cover;
+	background-attachment: scroll;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: rgb(225, 225, 255, 0);
 }
