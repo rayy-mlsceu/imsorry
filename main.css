@@ -6,26 +6,26 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    overflow: hidden; /* Prevents scrolling if content exceeds viewport */
 }
 
 p {
     font-size: 9px;
     line-height: 9px;
     text-align: justify;
-    background: url(raychi.jpg) no-repeat center/contain; /* Changed to contain for better scaling */
-    background-attachment: scroll; /* Changed to scroll to avoid fixed background issues on mobile */
+    background: url(raychi.jpg) no-repeat center center; /* Ensure image is centered */
+    background-size: cover; /* Adjust image to cover the text container */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+    -webkit-text-fill-color: transparent; /* Use transparent to ensure text color is affected */
     color: transparent;
-    max-width: 90vw; /* Ensure the text container doesn't overflow the viewport */
-    margin: 0 10px; /* Add some horizontal padding */
+    max-width: 90vw; /* Limit width to viewport */
+    margin: 0 10px; /* Padding around text */
 }
 
 @media only screen and (max-width: 600px) {
     p {
-        font-size: 6px; /* Adjust font size for smaller screens */
+        font-size: 6px;
         line-height: 6px;
-        background-size: contain; /* Ensure the background image scales down */
-        background-position: center;
+        background-size: cover; /* Maintain cover size for smaller screens */
     }
 }
